@@ -1,0 +1,16 @@
+{
+  "name": "Facebook Most Recent Default",
+  "description": "Make Facebook default to most recent on the newsfeed",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "https://*/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/"],
+      "js": ["background.js"]
+    }
+  ],
+  "manifest_version": 2
+}
